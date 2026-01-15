@@ -33,7 +33,7 @@ function generateEmail(email) {
     results.push(result + "@" + domain);
   }
 
-  const newResults = results.slice(0, 10000c);
+  const newResults = results.slice(0, 10000);
 
   addEmails(newResults)
 }
