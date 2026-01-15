@@ -1,0 +1,155 @@
+@font-face {
+    src: url("../fonts/cairo/Cairo-VariableFont_slnt\,wght.ttf");
+    font-family: "Cairo";
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Cairo";
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    position: relative;
+}
+@media(max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+h1.top-header {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    color: #2ecc71;
+}
+@media(max-width: 767px) {
+    h1.top-header {
+        font-size: 18px;
+    }
+}
+.container {
+    padding: 100px 0 0 100px; 
+}
+@media(max-width: 767px) {
+    .container {
+        padding: 50px 20px;
+        width: 350px;
+    }
+}
+.container h1.header {
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    width: fit-content;
+    position: relative;
+}
+@media(max-width: 767px) {
+    .container h1.header {
+        font-size: 25px;
+    }
+}
+.container h1.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #2ecc71;
+}
+.container h1.header span {
+    display: block;
+    margin-top: 10px;
+    color: #2ecc71;
+    font-size: 40px;
+    font-weight: 400;
+}
+@media(max-width: 767px) {
+    .container h1.header span {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+}
+.container .password {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 557px;
+}
+@media(max-width: 767px) {
+    .container .password {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.container .password input {
+    height: 65px;
+    background-color: transparent;
+    padding: 10px 0 10px 20px;
+    width: 450px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+@media(max-width: 767px) {
+    .container .password input {
+        font-size: 15px;
+        height: 50px;
+        width: 100%;
+    }
+}
+.container button {
+    border: none;
+    outline: none;
+    padding: 20px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2ecc71;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+@media(max-width: 767px) {
+    .container button {
+        font-size: 15px;
+        height: 45px;
+        padding: 15px 20px;
+        margin-top: 15px;
+    }
+}
+.container button i {
+    font-size: 25px;
+}
+@media(max-width: 767px) {
+    .container button i {
+        font-size: 15px;
+    }
+}
+.container .emails {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 25px;
+    padding: 20px;
+    display: none;
+    width: 557px;
+}
+@media(max-width: 767px) {
+    .container .emails {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+.container .emails p:not(:last-child) {
+    margin-bottom: 10px;
+}
